@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Asegura que no haya márgenes predeterminados */
+    padding: 0;
+    background-color: #a4c1ec; /* Fondo general */
+    color: #333; /* Color del texto */
+}
+
+/* Cabecera con imagen */
+header {
+    background-image: url('ruta/de/tu/imagen.jpg'); /* Cambia esta ruta a la de tu imagen */
+    background-size: cover;
+    background-position: center;
+    color: rgb(248, 249, 249);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Espaciado interno */
+    background: #fff; /* Fondo blanco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    border-radius: 8px; /* Bordes redondeados */
+    margin-top: -40px; /* Margen superior negativo para un efecto visual */
+}
+
+/* Estilo para el formulario de agregar estudiante */
+form {
+    display: flex; /* Utiliza flexbox para el formulario */
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Centra los elementos en el eje transversal */
+    margin: 20px auto; /* Margen superior e inferior */
+}
+
+/* Etiquetas del formulario */
+form label {
+    font-weight: bold; /* Negrita para las etiquetas */
+    margin-bottom: 5px; /* Espacio inferior de las etiquetas */
+}
+
+/* Campos de entrada del formulario */
+form input[type="text"],
+form input[type="date"],
+form input[type="file"] {
+    padding: 8px; /* Espaciado interno */
+    margin-bottom: 15px; /* Espacio inferior */
+    border: 1px solid #ddd; /* Bordes sutiles */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 90%; /* Ancho del campo ajustado */
+    max-width: 500px; /* Máximo ancho para mantenerlo mediano */
+    font-size: 0.95em; /* Tamaño de fuente levemente ajustado */
+}
+
+/* Botón del formulario */
+form button {
+    background-color: #2ecc71; /* Color del botón */
+    padding: 8px; /* Espaciado interno */
+    width: 30%; /* Ancho del botón */
+    border: none; /* Sin bordes */
+    color: white; /* Color del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1em; /* Tamaño de fuente */
+    transition: background 0.3s ease; /* Transición suave */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+}
+
+/* Efecto hover en el botón */
+form button:hover {
+    background-color: #27ae60; /* Color al pasar el ratón */
+}
+
+/* Botones y enlaces */
+a, button {
+    display: inline-block; /* Muestra los elementos en línea */
+    background-color: #3498db; /* Color del fondo */
+    color: #fff; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    margin: 5px; /* Margen */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 1em; /* Tamaño de fuente */
+    transition: background 0.3s ease; /* Transición suave */
+}
+
+a:hover, button:hover {
+    background-color: #2980b9; /* Color al pasar el ratón */
+}
+
+/* Tabla */
+table {
+    width: 100%; /* Asegúrate de que la tabla ocupe el 100% del contenedor */
+    border-collapse: collapse; /* Colapsar bordes */
+    margin: 20px 0; /* Espaciado superior e inferior */
+    font-size: 1em; /* Tamaño de fuente */
+    text-align: left; /* Alinear texto a la izquierda */
+}
+
+table th, table td {
+    padding: 15px; /* Espaciado interno de las celdas */
+    border-bottom: 1px solid #ddd; /* Bordes en la parte inferior de las celdas */
+}
+
+table th {
+    background-color: #3498db; /* Color de fondo para los encabezados */
+    color: white; /* Color de texto para los encabezados */
+}
+
+table td img {
+    border-radius: 50%; /* Bordes redondeados para imágenes */
+}
+
+/* Estilo de filas alternas en la tabla */
+table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Color de fondo alternativo para filas pares */
+}
+
+table tr:hover {
+    background-color: #f1f1f1; /* Efecto hover en filas */
+}
+
+/* Títulos de secciones */
+h2 {
+    font-size: 1.5em; /* Tamaño de fuente */
+    color: #3498db; /* Color del título */
+    margin-bottom: 15px; /* Espacio inferior */
+}
