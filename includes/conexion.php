@@ -3,8 +3,8 @@ require 'vendor/autoload.php';
 
 try {
     $cliente = new MongoDB\Client("mongodb://localhost:27017");
-    $database = $cliente->nombre_base_datos; 
-    $collection = $database->nombre_coleccion;
+    $database = $cliente->bd_estudiante; 
+    $collection = $database->estudiantes;
 } catch (Exception $e) {
     die("Error de conexión a MongoDB: " . $e->getMessage());
 }
